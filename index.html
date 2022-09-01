@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>住所検索くん</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <main>
+        <h1>郵便番号を入れてね！</h1>
+        <p>住所検索くんです。郵便番号から住所を調べるよ</p>
+
+        <form action="">
+            <label for="post_code">郵便番号</label><input type="text" id="post_code"><br>
+            <label for="prefecture">都道府県</label><input type="text" id="prefecture"><br>
+            <label for="city">市町村</label><input type="text" id="city"><br>
+            <label for="street">区</label><input type="text" id="street"><br>
+            <input type="submit" value="住所を調べる" id="submit_btn">
+        </form>
+
+        <p id="address"></p>
+
+    </main>
+
+    <script src="./js/common.js"></script>
+</body>
+</html>
